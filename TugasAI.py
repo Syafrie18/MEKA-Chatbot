@@ -2,7 +2,6 @@ from gtts import gTTS
 import os
 import streamlit as st
 import speech_recognition as sr
-import playsound
 
 def get_user_input():
     st.write("Masukkan kerusakan kendaraan anda:")
@@ -33,9 +32,9 @@ def ngomong(text):
     namafile = 'Ngomong.mp3'
     def reading():
         suara = gTTS(text=teks, lang=bahasa, slow=False)
-        suara.save("ouput.mp3")
-        playsound.playsound("output.mp3")
-    
+        suara.save(namafile)
+        os.system(f'start {namafile}')
+    reading()
 
 def main():
     st.title("MEKA")
