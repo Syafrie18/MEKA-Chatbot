@@ -24,7 +24,7 @@ def get_voice_input():
         query = None 
     return query
 
-st.write("Pendeteksi Kerusakan kendaraan")   
+st.write("Virtual asisten otomotif")   
 
 def ngomong(text):
     teks = (text)
