@@ -2,5 +2,4 @@ gTTS==2.3.2
 streamlit==1.23.1
 SpeechRecognition==3.9.0
 pip
-playsound
 pyaudio
