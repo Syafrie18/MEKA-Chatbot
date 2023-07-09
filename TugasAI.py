@@ -32,8 +32,12 @@ def ngomong(text):
     namafile = 'Ngomong.mp3'
     def reading():
         suara = gTTS(text=teks, lang=bahasa, slow=False)
-        suara.save(namafile)
-        os.system(f'start {namafile}')
+        suara.save("output.mp3")
+        audio_file_read = open('output.mp3', 'rb')
+        audio_bytes = audio_file_read.read()
+        bin_str = base64.b64encode(audio_bytes).decode()
+        st.audio(audio_bytes, format='audio/mp3')
+        st.markdown(get_binary_file_downloader_html("output.mp3", 'Audio File'), unsafe_allow_html=True)
     reading()
 
 def main():
