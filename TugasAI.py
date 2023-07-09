@@ -38,7 +38,7 @@ def ngomong(text):
     reading()
 
 def main():
-    st.title("MEKA")
+    st.title("🤖 MEKA")
     choice_options = ["Keyboard", "Suara", "Keluar"]
     st.write("Halo Selamat datang!")
     choice_selected = st.sidebar.selectbox("Metode input apa yang ingin anda gunakan?", options = choice_options)
