@@ -1,4 +1,3 @@
-import keyboard
 from gtts import gTTS
 import os
 import streamlit as st
