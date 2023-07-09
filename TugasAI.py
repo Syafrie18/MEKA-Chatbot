@@ -24,7 +24,7 @@ def get_voice_input():
         query = None 
     return query
 
-st.write("initializing MEKA")   
+st.write("Pendeteksi Kerusakan kendaraan")   
 
 def ngomong(text):
     teks = (text)
