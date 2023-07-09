@@ -37,7 +37,7 @@ def ngomong(text):
         audio_bytes = audio_file_read.read()
         bin_str = base64.b64encode(audio_bytes).decode()
         st.audio(audio_bytes, format='audio/mp3')
-        st.markdown(get_binary_file_downloader_html("output.mp3", 'Audio File'), unsafe_allow_html=True)
+        st.markdown(get_binary_file_downloader_html("output.mp3",'Audio File'), unsafe_allow_html=True)
     reading()
 
 def main():
