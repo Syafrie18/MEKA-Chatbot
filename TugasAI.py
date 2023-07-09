@@ -1,5 +1,5 @@
 from gtts import gTTS
-import os
+import playsound
 import streamlit as st
 import speech_recognition as sr
 
@@ -32,8 +32,8 @@ def ngomong(text):
     namafile = 'Ngomong.mp3'
     def reading():
         suara = gTTS(text=teks, lang=bahasa, slow=False)
-        suara.save(namafile)
-        os.system(f'start {namafile}')
+        suara.save("output.mp3")
+        playsound.playsound("output.mp3")
     reading()
 
 def main():
