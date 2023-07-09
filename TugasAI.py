@@ -40,13 +40,14 @@ def ngomong(text):
 def main():
     st.title("🤖 MEKA")
     choice_options = ["Keyboard", "Suara", "Keluar"]
-    st.write("Halo Selamat datang!")
     choice_selected = st.sidebar.selectbox("Metode input apa yang ingin anda gunakan?", options = choice_options)
        
     if choice_selected == "Keyboard":
+        st.write("Halo Selamat datang!")
         user_input = get_user_input()
         process_input(user_input)
     elif choice_selected == "Suara":
+        st.write("Halo Selamat datang!")
         user_input = get_voice_input()
         process_input(user_input)
     elif choice_selected == "Keluar":
