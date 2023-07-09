@@ -2,6 +2,7 @@ from gtts import gTTS
 import os
 import streamlit as st
 import speech_recognition as sr
+import pyaudio
 
 def get_user_input():
     st.write("Masukkan kerusakan kendaraan anda:")
